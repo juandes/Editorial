@@ -27,9 +27,10 @@
                 {{!-- Header --}}
                 <header id="header">
                     {{#if @site.logo}}
-                        <a href="{{@site.url}}" class="logo image"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+                        <a href="{{@site.url}}" class="logo image"><img src="{{@site.logo}}" alt="{{@site.title}}" style="padding-right: 10px;"/> Wander Data</a>
+                        {{!-- <a href="{{@site.url}}" class="logo">{{@site.title}}</a> --}}
                     {{else}}
-                        <a href="{{@site.url}}" class="logo">{{@site.title}}</a>
+                        {{!-- <a href="{{@site.url}}" class="logo">{{@site.title}}</a> --}}
                     {{/if}}
                     <ul class="icons">
                         {{#if @site.twitter}}
@@ -38,6 +39,9 @@
                         {{#if @site.facebook}}
                             <li><a href="{{facebook_url @site.facebook}}" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a></li>
                         {{/if}}
+                        <li><a href="http://linkedin.com/in/jddios" class="icon fa-linkedin" title="Twitter"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="http://github.com/juandes" class="icon fa-github-square" title="GitHub"><span class="label">GitHub</span></a></li>
+                        <li><a href="mailto:me@juandes.com" class="icon fa-envelope-square" title="Email"><span class="label">Email</span></a></li>
                         <li><a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a></li>
                     </ul>
                 </header>
