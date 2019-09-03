@@ -41,6 +41,7 @@ into the {body} of the default.hbs template --}}
             {{#if feature_image}}
             <a href="{{url}}" class="image fit"><img src="{{img_url feature_image}}" alt="{{title}}" /></a>
             {{/if}}
+            <p style="margin: 0;">{{date published_at format='MMMM D, YYYY'}}</p>
             <h3><a href="{{url}}">{{title}}</a></h3>
             <p>{{excerpt words="33"}}</p>
             <ul class="actions special">
